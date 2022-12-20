@@ -24,6 +24,17 @@ private String fotoperfil;
 private String acercademi;
 private String imagen_background;
 
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, String fotoperfil, String acercademi, String imagen_background) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.fotoperfil = fotoperfil;
+        this.acercademi = acercademi;
+        this.imagen_background = imagen_background;
+    }
+
     public Long getId() {
         return id;
     }
