@@ -1,10 +1,7 @@
 package com.ap_portfolio_los.tp.Interface;
 
 import com.ap_portfolio_los.tp.Entity.Persona;
-import jakarta.persistence.metamodel.SingularAttribute;
-import java.io.Serializable;
 import java.util.List;
-import org.springframework.data.jpa.domain.AbstractPersistable;
 
 public interface IPersonaService {
 
