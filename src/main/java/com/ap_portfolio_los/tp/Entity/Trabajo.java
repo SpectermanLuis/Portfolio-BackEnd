@@ -6,24 +6,24 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Educacion {
+public class Trabajo {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)        
 Long id;
 private String inicio;
 private String fin;
+private String tarea;
 private String logo;
-private String nivel;
 
-    public Educacion() {
+    public Trabajo() {
     }
 
-    public Educacion(String inicio, String fin, String logo, String nivel) {
+    public Trabajo(String inicio, String fin, String tarea, String logo) {
         this.inicio = inicio;
         this.fin = fin;
+        this.tarea = tarea;
         this.logo = logo;
-        this.nivel = nivel;
     }
 
     public Long getId() {
@@ -50,6 +50,14 @@ private String nivel;
         this.fin = fin;
     }
 
+    public String getTarea() {
+        return tarea;
+    }
+
+    public void setTarea(String tarea) {
+        this.tarea = tarea;
+    }
+
     public String getLogo() {
         return logo;
     }
@@ -57,13 +65,6 @@ private String nivel;
     public void setLogo(String logo) {
         this.logo = logo;
     }
-
-    public String getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(String nivel) {
-        this.nivel = nivel;
-    }
+  
 
 }
